@@ -1,0 +1,141 @@
+app-peminjaman-alat/
+│
+├── app/
+│   │
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   │
+│   │   │   ├── Auth/
+│   │   │   │   └── LoginController.php
+│   │   │   │
+│   │   │   ├── Admin/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── UserController.php
+│   │   │   │   ├── KategoriController.php
+│   │   │   │   ├── AlatController.php
+│   │   │   │   ├── PeminjamanController.php
+│   │   │   │   ├── PengembalianController.php
+│   │   │   │   ├── LaporanController.php
+│   │   │   │   └── LogActivityController.php
+│   │   │   │
+│   │   │   ├── Petugas/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── PeminjamanController.php
+│   │   │   │   └── PengembalianController.php
+│   │   │   │
+│   │   │   └── Peminjam/
+│   │   │       ├── DashboardController.php
+│   │   │       ├── AlatController.php
+│   │   │       ├── PeminjamanController.php
+│   │   │       └── PengembalianController.php
+│   │   │
+│   │   └── Middleware/
+│   │       ├── AdminMiddleware.php
+│   │       ├── PetugasMiddleware.php
+│   │       └── PeminjamMiddleware.php
+│   │
+│   └── Models/
+│       ├── User.php
+│       ├── Kategori.php
+│       ├── Alat.php
+│       ├── Peminjaman.php
+│       ├── Pengembalian.php
+│       └── LogActivity.php
+│
+├── database/
+│   │
+│   ├── migrations/
+│   │   ├── create_users_table.php
+│   │   ├── create_kategoris_table.php
+│   │   ├── create_alats_table.php
+│   │   ├── create_peminjamans_table.php
+│   │   ├── create_pengembalians_table.php
+│   │   └── create_log_activities_table.php
+│   │
+│   └── seeders/
+│       ├── DatabaseSeeder.php
+│       ├── UserSeeder.php
+│       ├── KategoriSeeder.php
+│       └── AlatSeeder.php
+│
+├── public/
+│   │
+│   ├── adminlte/
+│   └── uploads/
+│       └── alat/
+│
+├── resources/
+│   │
+│   └── views/
+│       │
+│       ├── layouts/
+│       │   ├── app.blade.php
+│       │   ├── navbar.blade.php
+│       │   ├── sidebar.blade.php
+│       │   └── footer.blade.php
+│       │
+│       ├── auth/
+│       │   └── login.blade.php
+│       │
+│       ├── admin/
+│       │   │
+│       │   ├── dashboard/
+│       │   │   └── index.blade.php
+│       │   │
+│       │   ├── user/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   │
+│       │   ├── kategori/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   │
+│       │   ├── alat/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   │
+│       │   ├── peminjaman/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── approval.blade.php
+│       │   │   └── detail.blade.php
+│       │   │
+│       │   ├── pengembalian/
+│       │   │   ├── index.blade.php
+│       │   │   ├── verifikasi.blade.php
+│       │   │   └── detail.blade.php
+│       │   │
+│       │   ├── laporan/
+│       │   │   ├── peminjaman.blade.php
+│       │   │   ├── pengembalian.blade.php
+│       │   │   └── cetak.blade.php
+│       │   │
+│       │   └── logactivity/
+│       │       └── index.blade.php
+│       │
+│       ├── petugas/
+│       │   ├── dashboard/
+│       │   ├── peminjaman/
+│       │   └── pengembalian/
+│       │
+│       └── peminjam/
+│           ├── dashboard/
+│           ├── alat/
+│           ├── peminjaman/
+│           └── pengembalian/
+│
+├── routes/
+│   ├── web.php
+│   └── auth.php
+│
+├── storage/
+│
+├── .env
+├── composer.json
+└── artisan

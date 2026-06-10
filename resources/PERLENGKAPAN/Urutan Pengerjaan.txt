@@ -1,0 +1,22 @@
+Urutan Pengerjaan yang Saya Sarankan
+
+Karena waktu UKK hanya 23 jam, urutannya:
+
+1. Install Laravel 13
+2. Install AdminLTE
+3. Setup Database
+4. Migration
+5. Model + Relasi
+6. Seeder Admin
+7. Login
+8. Middleware Role
+9. Dashboard
+10. CRUD Kategori
+11. CRUD Alat
+12. CRUD User
+13. Peminjaman
+14. Approval
+15. Pengembalian
+16. Laporan
+17. Log Activity
+18. Testing
