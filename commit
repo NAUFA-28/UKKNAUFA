@@ -1,0 +1,10 @@
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=NAUFA-28
+user.email=gofvk81@gmail.com
+user.naufa=-28
+credential.helperselector.selected=manager
+credential.https://dev.azure.com.usehttppath=true
+credential.helper=manager
