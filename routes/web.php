@@ -43,10 +43,24 @@ Route::post('/login', function (Request $request) {
 
     return back();
 });
+Route::get('/dashboard', function () {
 
+    $totalKategori = Kategori::count();
+    $totalAlat = Alat::count();
+
+    return view('dashboard', compact(
+        'totalKategori',
+        'totalAlat'
+    ));
+
+});
 
 
 Route::get('/admin/dashboard', function () {
+
+    if(Auth::user()->role != 'admin'){
+        abort(403);
+    }
 
     $totalKategori = Kategori::count();
     $totalAlat = Alat::count();
@@ -63,8 +77,13 @@ Route::get('/petugas/dashboard', function () {
     return view('petugas.dashboard.index');
 });
 
-Route::get('/peminjam/dashboard', function () {
-    return 'Dashboard Peminjam';
+Route::get('/petugas/dashboard', function () {
+
+    if(Auth::user()->role != 'petugas'){
+        abort(403);
+    }
+
+    return view('petugas.dashboard.index');
 });
 Route::get('/logout', function () {
     Auth::logout();

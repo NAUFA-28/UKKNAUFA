@@ -20,13 +20,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     <div class="w-64 min-h-screen bg-blue-700 text-white p-6">
 
         <h2 class="text-2xl font-bold mb-8">
-            🔧 Sistem Alat
+            🧰 Menu Petugas
         </h2>
 
-        <a href="/admin/dashboard"
-        class="block p-3 rounded-lg hover:bg-blue-600 mb-2">
-            <i class="fa fa-home"></i> Dashboard
-        </a>
+        <a href="/petugas/dashboard"
+   class="block p-3 rounded-lg hover:bg-blue-600 mb-2">
+    <i class="fa fa-home"></i> Dashboard
+</a>
 
         <a href="/kategori"
         class="block p-3 rounded-lg bg-blue-800 mb-2">
@@ -49,10 +49,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     <div class="flex-1 p-8">
 
         <div class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-8 rounded-3xl shadow-lg">
+<h1 class="text-4xl font-bold">
+    📋 KATEGORI PETUGAS
+</h1>
 
-            <h1 class="text-4xl font-bold">
-                Data Kategori
-            </h1>
+<p class="mt-2">
+    Kelola kategori alat sebagai petugas
+</p>
 
             <p class="mt-2">
                 Kelola kategori alat dengan mudah
@@ -84,10 +87,10 @@ class="bg-green-600 text-white px-5 py-3 rounded-xl shadow">
 </a>
 
 @endif
-        <a href="/admin/dashboard"
-           class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
-            🏠 Dashboard
-        </a>
+        <a href="/petugas/dashboard"
+   class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl shadow">
+    🏠 Dashboard
+</a>
         </div>
 
         <div class="bg-white mt-6 rounded-3xl shadow-lg overflow-hidden">
@@ -162,7 +165,6 @@ class="bg-green-600 text-white px-5 py-3 rounded-xl shadow">
 
 </td>
 
-                        </td>
 
                     </tr>
 

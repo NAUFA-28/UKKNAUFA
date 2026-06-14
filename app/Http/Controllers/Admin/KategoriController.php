@@ -12,11 +12,19 @@ class KategoriController extends Controller
     {
         $kategoris = Kategori::all();
 
+        if (auth()->user()->role == 'petugas') {
+            return view('petugas.kategori.index', compact('kategoris'));
+        }
+
         return view('admin.kategori.index', compact('kategoris'));
     }
 
     public function create()
     {
+        if (auth()->user()->role == 'petugas') {
+            return view('petugas.kategori.create');
+        }
+
         return view('admin.kategori.create');
     }
 
@@ -44,6 +52,10 @@ class KategoriController extends Controller
     public function edit(string $id)
     {
         $kategori = Kategori::findOrFail($id);
+
+        if (auth()->user()->role == 'petugas') {
+            return view('petugas.kategori.edit', compact('kategori'));
+        }
 
         return view('admin.kategori.edit', compact('kategori'));
     }
